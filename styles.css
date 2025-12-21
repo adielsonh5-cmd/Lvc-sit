@@ -1,69 +1,89 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    background: #f7f7f7;
-    color: #222;
+    background: #f5f7f5;
 }
 
 header {
-    background: #1e5f2e;
+    background: #065f24;
+    padding: 15px;
     color: white;
-    padding: 20px;
     text-align: center;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
+nav a {
     color: white;
-    font-weight: bold;
+    margin: 0 12px;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .hero {
     text-align: center;
-    padding: 40px 20px;
+    padding: 25px;
 }
 
-.links-importantes, .contrato, .objetivo, .social {
-    padding: 20px;
-    margin: 20px;
-    background: white;
+.cta {
+    display: inline-block;
+    background: #ffc107;
+    color: black;
+    padding: 12px 22px;
     border-radius: 8px;
+    font-size: 18px;
+    text-decoration: none;
+    margin-top: 12px;
 }
 
-.social-buttons {
-    display: flex;
-    gap: 10px;
+section {
+    background: #fff;
+    margin: 15px;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.05);
 }
 
-.btn {
-    padding: 10px 16px;
-    border-radius: 5px;
+.social a {
+    margin: 5px;
+    padding: 8px 14px;
+    border-radius: 6px;
     color: white;
     text-decoration: none;
-    font-weight: bold;
 }
 
-/* Cores */
+.ig { background: #e1306c; }
+.tt { background: #000; }
+.tw { background: #1da1f2; }
+.tg { background: #0088cc; }
 
-.instagram { background: #E1306C; }
-.tiktok { background: #010101; }
-.twitter { background: #1DA1F2; }
-.telegram { background: #0088cc; }
+.contract {
+    font-family: monospace;
+    background: #eee;
+    padding: 10px;
+    border-radius: 5px;
+}
 
 footer {
-    background: #1e5f2e;
+    background: #065f24;
     color: white;
     text-align: center;
     padding: 10px;
+    margin-top: 20px;
+}
+
+/* Responsivo */
+
+@media (max-width: 600px) {
+
+    nav a {
+        display: block;
+        margin: 8px 0;
+    }
+
+    .cta {
+        width: 90%;
+    }
+
+    section {
+        margin: 10px;
+    }
 }

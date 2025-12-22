@@ -87,3 +87,42 @@ footer {
         margin: 10px;
     }
 }
+/* === Logotipo com gradiente animado === */
+.logo-animated {
+  background: linear-gradient(120deg, #5a00ff, #00d4ff, #00ff9d);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientText 6s ease infinite;
+}
+
+@keyframes gradientText {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* === Botão Comprar LVC === */
+.btn-lvc {
+  background: linear-gradient(90deg, #5a00ff, #00d4ff, #00ff9d);
+  background-size: 300% 300%;
+  animation: btnGradient 4s ease infinite;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 26px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  color: #ffffff;
+  font-weight: bold;
+  transition: transform .2s ease;
+}
+
+.btn-lvc:hover {
+  transform: scale(1.05);
+}
+
+@keyframes btnGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 200% 50%; }
+  100% { background-position: 0% 50%; }
+}

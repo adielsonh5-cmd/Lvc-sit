@@ -1,93 +1,93 @@
+/* === RESET BÁSICO === */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background: #f5f7f5;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f5f7f5;
+  color: #222;
 }
 
+/* === HEADER === */
 header {
-    background: #065f24;
-    padding: 15px;
-    color: white;
-    text-align: center;
+  background: #065f24;
+  padding: 15px;
+  color: white;
+  text-align: center;
 }
 
 nav a {
-    color: white;
-    margin: 0 12px;
-    text-decoration: none;
-    font-weight: bold;
+  color: white;
+  margin: 0 12px;
+  text-decoration: none;
+  font-weight: bold;
 }
 
+/* === HERO === */
 .hero {
-    text-align: center;
-    padding: 25px;
+  text-align: center;
+  padding: 25px;
 }
 
+/* === BOTÃO CTA PADRÃO === */
 .cta {
-    display: inline-block;
-    background: #ffc107;
-    color: black;
-    padding: 12px 22px;
-    border-radius: 8px;
-    font-size: 18px;
-    text-decoration: none;
-    margin-top: 12px;
+  display: inline-block;
+  background: #ffc107;
+  color: black;
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-size: 18px;
+  text-decoration: none;
+  margin-top: 12px;
 }
 
+/* === SEÇÕES === */
 section {
-    background: #fff;
-    margin: 15px;
-    padding: 18px;
-    border-radius: 10px;
-    box-shadow: 0 0 8px rgba(0,0,0,0.05);
+  background: #ffffff;
+  margin: 15px;
+  padding: 18px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
 }
 
-.social a {
-    margin: 5px;
-    padding: 8px 14px;
-    border-radius: 6px;
-    color: white;
-    text-decoration: none;
-}
-
-.ig { background: #e1306c; }
-.tt { background: #000; }
-.tw { background: #1da1f2; }
-.tg { background: #0088cc; }
-
+/* === CONTRATO === */
 .contract {
-    font-family: monospace;
-    background: #eee;
-    padding: 10px;
-    border-radius: 5px;
+  font-family: monospace;
+  background: #eee;
+  padding: 10px;
+  border-radius: 5px;
+  word-break: break-all;
 }
 
+/* === FOOTER === */
 footer {
-    background: #065f24;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    margin-top: 20px;
+  background: #065f24;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
 }
 
-/* Responsivo */
-
+/* === RESPONSIVO === */
 @media (max-width: 600px) {
+  nav a {
+    display: block;
+    margin: 8px 0;
+  }
 
-    nav a {
-        display: block;
-        margin: 8px 0;
-    }
+  .cta,
+  .btn-lvc {
+    width: 90%;
+  }
 
-    .cta {
-        width: 90%;
-    }
-
-    section {
-        margin: 10px;
-    }
+  section {
+    margin: 10px;
+  }
 }
-/* === Logotipo com gradiente animado === */
+
+/* ======================================================
+   IDENTIDADE VISUAL LVC
+====================================================== */
+
+/* === LOGOTIPO COM GRADIENTE ANIMADO === */
 .logo-animated {
   background: linear-gradient(120deg, #5a00ff, #00d4ff, #00ff9d);
   background-size: 400% 400%;
@@ -102,7 +102,7 @@ footer {
   100% { background-position: 0% 50%; }
 }
 
-/* === Botão Comprar LVC === */
+/* === BOTÃO COMPRAR LVC === */
 .btn-lvc {
   background: linear-gradient(90deg, #5a00ff, #00d4ff, #00ff9d);
   background-size: 300% 300%;
@@ -115,6 +115,8 @@ footer {
   color: #ffffff;
   font-weight: bold;
   transition: transform .2s ease;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .btn-lvc:hover {
@@ -126,30 +128,11 @@ footer {
   50% { background-position: 200% 50%; }
   100% { background-position: 0% 50%; }
 }
-/* ===== BOTÃO COMPRAR LVC ===== */
-.cta-buttons {
-  margin-top: 20px;
-}
 
-.btn-buy {
-  display: inline-block;
-  background: linear-gradient(135deg, #00c853, #009624);
-  color: #fff;
-  padding: 14px 28px;
-  border-radius: 10px;
-  font-weight: bold;
-  text-decoration: none;
-  font-size: 1.05em;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
+/* ======================================================
+   REDES SOCIAIS (FINALMENTE INCLUÍDO)
+====================================================== */
 
-.btn-buy:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 22px rgba(0,0,0,0.2);
-}
-
-/* ===== REDES SOCIAIS ===== */
 .social-links {
   margin-top: 20px;
   display: flex;
@@ -162,8 +145,24 @@ footer {
   color: #b2ff59;
   text-decoration: none;
   font-weight: 500;
+  font-size: 1rem;
 }
 
 .social-links a:hover {
   text-decoration: underline;
+}
+
+/* === BOTÕES COLORIDOS OPCIONAIS === */
+.ig { background: #e1306c; }
+.tt { background: #000000; }
+.tw { background: #1da1f2; }
+.tg { background: #0088cc; }
+
+.social-links .ig,
+.social-links .tt,
+.social-links .tw,
+.social-links .tg {
+  padding: 8px 14px;
+  border-radius: 6px;
+  color: #ffffff;
 }

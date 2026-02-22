@@ -1,1 +1,74 @@
-mercado.html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Mercado LVC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      background: #0f172a;
+      font-family: Arial, sans-serif;
+      color: white;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      margin-top: 40px;
+      font-size: 32px;
+      color: #22c55e;
+    }
+
+    .container {
+      margin: 40px auto;
+      max-width: 900px;
+    }
+
+    iframe {
+      border-radius: 16px;
+      margin-top: 20px;
+    }
+
+    .botao-voltar {
+      margin-top: 40px;
+      display: inline-block;
+      padding: 10px 20px;
+      background: #22c55e;
+      color: black;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Mercado LVC</h1>
+
+  <div class="container">
+
+    <h2>Comprar e Vender LVC</h2>
+
+    <iframe 
+      src="COLE_AQUI_LINK_SWAP_UNISWAP"
+      height="600"
+      width="100%">
+    </iframe>
+
+    <h2>Gráfico em Tempo Real</h2>
+
+    <iframe 
+      src="COLE_AQUI_LINK_GeckoTerminal"
+      height="600"
+      width="100%">
+    </iframe>
+
+  </div>
+
+  <a href="index.html" class="botao-voltar">Voltar ao Site</a>
+
+</body>
+</html>mercado.html

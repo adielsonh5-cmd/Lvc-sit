@@ -52,11 +52,16 @@
 
     <h2>Comprar e Vender LVC</h2>
 
-    <iframe 
-      src="COLE_AQUI_LINK_SWAP_UNISWAP"
-      height="600"
-      width="100%">
-    </iframe>
+    <div class="card">
+  <h2>Swap LVC</h2>
+  <p>Negocie LVC diretamente na infraestrutura descentralizada da Uniswap (Base).</p>
+
+  <a href="https://app.uniswap.org/swap?chain=base&outputCurrency=0x5962aa892ff4a7f690c1e4e2d123be4826e9f341"
+     target="_blank"
+     class="botao-swap">
+     Comprar / Vender LVC
+  </a>
+</div>
 
     <h2>Gráfico em Tempo Real</h2>
 
